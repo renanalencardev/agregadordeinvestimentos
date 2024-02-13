@@ -20,19 +20,19 @@ public class User {
     @Column(name = "password")
     private String password;
     @CreationTimestamp
-    private Instant craationTimestamp;
+    private Instant creationTimestamp;
     @UpdateTimestamp
     private Instant updatedTimestamp;
 
     public User() {
     }
 
-    public User(UUID userId, String username, String email, String password, Instant craationTimestamp, Instant updatedTimestamp) {
+    public User(UUID userId, String username, String email, String password, Instant creationTimestamp, Instant updatedTimestamp) {
         this.userId = userId;
         this.username = username;
         this.email = email;
         this.password = password;
-        this.craationTimestamp = craationTimestamp;
+        this.creationTimestamp = creationTimestamp;
         this.updatedTimestamp = updatedTimestamp;
     }
 
@@ -68,12 +68,12 @@ public class User {
         this.password = password;
     }
 
-    public Instant getCraationTimestamp() {
-        return craationTimestamp;
+    public Instant getCreationTimestamp() {
+        return creationTimestamp;
     }
 
-    public void setCraationTimestamp(Instant craationTimestamp) {
-        this.craationTimestamp = craationTimestamp;
+    public void setCreationTimestamp(Instant creationTimestamp) {
+        this.creationTimestamp = creationTimestamp;
     }
 
     public Instant getUpdatedTimestamp() {
